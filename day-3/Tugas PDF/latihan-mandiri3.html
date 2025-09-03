@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Mandiri 3</title>
+</head>
+<body>
+    <script>
+        // 1. Sortir usia
+        let usia = prompt("Berapa usiamu?")
+        alert("Hasilnya di Inspect element ya, Ctrl + Shift + C")
+        if(usia <= 12){
+            console.log("Kamu masih anak-anak")
+        }else if(usia > 12 && usia <= 18){
+            console.log("Kamu adalah seorang remaja")
+        }else {
+            console.log("Kamu adalah orang dewasa")
+        }
+
+        // 2. loop 'for'
+
+        for(let i = 1; i <= 10; i++){
+            console.log("angka ke-"+i)
+        }
+
+        // 3. Switch urutan hari
+        const hari = 7
+        switch (hari) {
+            case 1:
+                console.log("Senin");
+                break;
+            case 2:
+                console.log("Selasa");
+                break;
+            case 3:
+                console.log("Rabu");
+                break;
+            case 4:
+                console.log("Kamis");
+                break;
+            case 5:
+                console.log("Jum'at");
+                break;
+            case 6:
+                console.log("Sabtu");
+                break;
+            case 7:
+                console.log("Ahad");
+                break;
+            default:
+                console.log("Emang ada hari ke-"+hari+"?")
+                break;
+        }
+    </script>
+</body>
+</html>
