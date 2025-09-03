@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan JS</title>
+</head>
+<body>
+    <script>
+        // 1. Ganjil Genap
+        const angka = 7866432456789123
+        console.log(angka % 2)
+
+        if(angka % 2 === 0){
+            console.log("angka genap")
+        }else{
+            console.log("angka ganjil")
+        }
+        // 2. Cek usia
+        const umur = 12
+
+        if(umur <= 17) {
+            console.log("Belum cukup umur untuk masuk bioskop")
+        }else{
+            console.log("Sudah cukup umur untuk masuk bioskop")
+        }
+
+        // 3. Cek suhu ruangan
+        const suhu = 37
+
+        if(suhu < 25){
+            console.log("Suhu dingin")
+        }else if(suhu >=25 && suhu < 31){
+            console.log("Suhu normal")
+        }else{
+            console.log("PANAS SETAANNNN")
+        }
+
+        // 4. Login
+        const username = "Loetphij"
+        const password = "M3NKR3P~PL4Y3R"
+
+        if(username === "Loetphij" && password === "M3NKR3P~PL4Y3R") {
+            console.log("Anda sudah login!")
+        } else {
+            console.log("Username atau password salah!")
+        }
+
+        // 5. Lulus/Tidak Ujian
+        const nilai = 75
+        
+        if(nilai >= 75 && nilai <= 100){
+            console.log("Lulus ujian")
+        }else{
+            console.log("Tidak lulus ujian")
+        }
+    </script>
+</body>
+</html>

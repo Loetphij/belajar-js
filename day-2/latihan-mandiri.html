@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Variabel & Operator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      color: #2575fc;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    code {
+      background: #eee;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Belajar Variabel, Tipe Data, dan Operator</h1>
+
+  <!-- Card input -->
+  <div class="card" id="inputData"></div>
+
+  <!-- Card hasil -->
+  <div class="card" id="output1"></div>
+  <div class="card" id="output2"></div>
+  <div class="card" id="output3"></div>
+
+  <script>
+    // Variabel
+    let umur = 15;
+    const nama = "Luthfi";
+    var apakahPelajar = true;
+
+    let v1 = 50;
+    let v2 = "50";
+
+    // Tampilkan input data
+    document.getElementById("inputData").innerHTML = `
+      <h2>📥 Data Input</h2>
+      <p><b>Nama:</b> ${nama}</p>
+      <p><b>Umur:</b> ${umur}</p>
+      <p><b>Apakah Pelajar?:</b> ${apakahPelajar}</p>
+      <p><b>v1:</b> ${v1}</p>
+      <p><b>v2:</b> "${v2}"</p>
+    `;
+
+    // Tampilkan hasil
+    document.getElementById("output1").innerHTML =
+      `<h2>📤 Output 1</h2>
+       <p>Dia bernama <b>${nama}</b>, umurnya <b>${umur}</b>, apakah dia pelajar? <b>${apakahPelajar}</b></p>`;
+
+    document.getElementById("output2").innerHTML =
+      `<h2>📤 Output 2</h2>
+       <p>Hasil dari <code>v1 + v2</code> adalah: <b>${v1 + v2}</b></p>`;
+
+    document.getElementById("output3").innerHTML =
+      `<h2>📤 Output 3</h2>
+       <p>Apakah <code>v1 === v2</code>? <b>${v1 === v2}</b></p>`;
+  </script>
+</body>
+</html>

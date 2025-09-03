@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitung Total Harga</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      color: #2575fc;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Hitung Total Harga Produk</h1>
+
+  <div class="card" id="inputData"></div>
+  <div class="card" id="outputData"></div>
+
+  <script>
+    // Variabel harga produk
+    const produk1 = 15000;
+    const produk2 = 10000;
+
+    // Hitung total
+    let total = produk1 + produk2;
+
+    // Tampilkan input (harga produk)
+    document.getElementById("inputData").innerHTML = `
+      <h2>📥 Data Produk</h2>
+      <p>produk1 = <b>Rp${produk1}</b></p>
+      <p>produk2 = <b>Rp${produk2}</b></p>
+    `;
+
+    // Tampilkan hasil total
+    document.getElementById("outputData").innerHTML = `
+      <h2>📤 Hasil Perhitungan</h2>
+      <p>Total Harga dari Produk 1 dan Produk 2 = <b>Rp${total}</b></p>
+    `;
+  </script>
+</body>
+</html>
