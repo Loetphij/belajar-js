@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi Arrow</title>
+</head>
+<body>
+    <script>
+        // 1. Mengurangi angka
+        let kurang = (a,b) => a - b;
+        console.log(kurang(4,5))
+
+        // 2. Hitung Pajak
+        let bayarPajak = (harta, pajak) => harta * pajak
+        console.log(bayarPajak(50000000, 12 / 1000))
+
+        // 3. Menampilkan salam
+        let salam = () => "Assalamualaikum sahabat hytam :)"
+        console.log(salam())
+
+        // 4. Hitung umur dari tahun lahir
+        let umur = (tl, ts) => ts - tl
+        console.log(umur(2010, 2025))
+
+        // 5. Celcius ke Fahrenheit
+        let konversi = (c) => (c * 9/5) + 32
+        console.log(konversi(38)) 
+ 
+    </script>
+</body>
+</html>

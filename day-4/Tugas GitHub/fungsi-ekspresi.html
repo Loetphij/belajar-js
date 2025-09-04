@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi Ekspresi</title>
+</head>
+<body>
+    <h1>Ctrl + Shift + C</h1>
+    <script>
+        // 1. Hitung Luas Segitiga
+        let luasSegitiga = function(a, t) {
+            return a * t / 2; 
+        };
+        console.log(luasSegitiga(6, 8));
+
+        // 2. Hitung Keliling Lingkaran
+        let kelilingLingkaran = function(r){
+            let phi;
+            if (r % 7 === 0) {
+                phi = 22 / 7;
+            } else {
+                phi = 3.14;
+            }
+            return 2 * phi * r;
+        }
+        console.log(kelilingLingkaran(7))
+        console.log(kelilingLingkaran(15))
+
+        // 3. Tambah dua angka
+        let tambah = function(a, b){
+            return a + b;
+        }
+        console.log(tambah(2,5))
+
+        // 4. Menjadikan Huruf Besar / Capslock
+        let ubahKeBesar = function(teks){
+            return teks.toUpperCase();
+        }
+        console.log(ubahKeBesar("halo bajindul"))
+
+        // 5. Menghitung diskon
+        let total = function(harga, diskon){
+            return harga - (harga * diskon);
+        }
+        console.log(total(200000, 15 / 100))
+
+    </script>
+</body>
+</html>

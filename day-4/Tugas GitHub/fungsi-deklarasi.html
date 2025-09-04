@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi Deklarasi</title>
+</head>
+<body>
+    <h1>LIAT INSPECT ELEMEN, Ctrl + Shift + C</h1>
+    <script>
+        // 1. Luas Persegi
+        const sisi = 14
+        function luasPersegi(sisi) {
+            return sisi * sisi   
+        }
+        console.log("Luas persegi dengan sisi " + sisi + " adalah " + luasPersegi(sisi));
+        
+        luasPersegi(sisi)
+        
+        // 2. Menyapa user
+        let nama = prompt("Panjenengan asmanipun sinten, nggih?")
+        function sapa(nama) {
+            console.log("Sugeng rawuh, "+nama+"! Monggo mlebet rumiyin")
+        }
+        sapa(nama)
+
+        // 3. Menampilkan biodata
+        function tampilkanBiodata() {
+            console.log("Pekenalkan nama saya Muhammad Luthfi Aziz. Asal saya dari Kota Batu, Jawa Timur. Insya Allah akan terbuka 19 Juta lapangan pekerjaan")
+        }
+        tampilkanBiodata()
+
+        // 4. Cek angka ganjil/genap
+        function ganjilGenap(angka) {
+        if(angka % 2 === 0){
+            console.log(angka + " adalah angka genap")
+        } else { 
+            console.log(angka + " adalah angka ganjil")
+        }
+        }
+        ganjilGenap(16)
+        ganjilGenap(9)
+        
+        // 5. Mencetak Daftar Menu
+        
+    </script>
+</body>
+</html>
