@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        // 1. Buat variabel namaSekolah di global, lalu tampilkan di dalam fungsi.
+        let namaSekolah = "MBS SMP Muhammadiyah 06 Dau - Malang"; // Global
+
+        function asal() {
+            let nama = "Luthfi"; // Local
+            console.log(namaSekolah);
+            console.log(nama);
+        }
+        asal();
+
+        // 2. Buat variabel namaGuru di dalam fungsi, coba tampilkan di luar fungsi.
+        function profesi() {
+            let namaGuru = "Imaduddin";
+            console.log(namaGuru) // Local
+            
+        }
+
+        // 3. Buat perulangan for dengan let i, cek apakah i bisa dipakai di luar perulangan.
+        for(let i = 1; i <= 2; i++){
+            console.log(i);
+        }
+        console.log(i)
+
+        // 4. Bandingkan var dan let di dalam perulangan (lihat bedanya).
+        for(var i = 1; i < 3; i++){
+            console.log(i);
+        }
+        console.log(i)
+
+        // 5. Buat dua fungsi berbeda, masing-masing punya variabel namaSiswa. Apakah mereka bisa saling ganggu?
+        function kelas1() {
+            let namaSiswa = "Ahmad";
+            console.log(namaSiswa);
+        }
+
+        function kelas2() {
+            let namaSiswa = "Budi";
+            console.log(namaSiswa);
+        }
+        kelas1();
+        kelas2();
+    </script>
+</body>
+</html>

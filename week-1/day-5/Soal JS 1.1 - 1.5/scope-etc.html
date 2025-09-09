@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        // 1. Buat variabel sekolah di global, tampilkan di dalam fungsi.
+        let sekolah = "MBS SMP Muhammadiyah 06 Dau - Malang"; // Global
+
+        function asal() {
+            let nama = "Luthfi"; // Local
+            console.log(sekolah);
+            console.log(nama);
+        }
+        asal();
+
+        // 2. Buat variabel guru di dalam fungsi, coba tampilkan di luar fungsi.
+        // function profesi() {
+        //     let guru = "Imaduddin";   
+        // }
+        // console.log(guru) 
+
+        // 3. Coba tampilkan variabel var sebelum dideklarasikan. Apa hasilnya?
+        console.log(nama); 
+        var nama = "Abdul";
+
+        // 4. Buat fungsi buatCounter() yang tiap kali dipanggil menambah angka +1 (gunakan closure).
+        // function buatCounter() {
+        //     let angka = 0;
+
+        //     function counter() {
+        //         angka += 1; 
+        //         console.log("Counter: " + angka);
+        //     }
+        //     return counter
+
+        // }
+        // let count = buatCounter();
+
+        // while ("Angka berhasil ditambahkan") {
+        //     let input = confirm("Tambahkan angka")
+
+        //     if (input === null) {
+        //     console.log("Program selesai.");
+        //     break; 
+        // }
+
+        // count(confirm(input));
+        // }
+
+        // 5. Buat fungsi pencatatanPengeluaran() yang menyimpan total pengeluaran dengan closure.
+        function pencatatanPengeluaran(){
+            let catatan= [];
+
+            function catatPengeluaran(){
+                catatan.push(tambah); 
+                console.log(`Isi keranjang sekarang: ${catatan.join(", ")}`);
+            }
+
+            return catatPengeluaran;
+        }
+
+        let catatanPengeluaran = pencatatanPengeluaran();
+
+        while (true) {
+            let input = prompt("Masukkan catatan pengeluaran");
+
+            if (input === null) {
+                console.log("Program selesai.");
+                break; 
+            }   
+
+            catatanPengeluaran(input);
+        }
+    </script>
+</body>
+</html>

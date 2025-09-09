@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        // 1. Buat fungsi sapa(nama) yang menampilkan "Halo, [nama]!".
+        function sapa(nama) {
+            alert("Halo, " + nama + "!")
+            console.log("Halo, " + nama + "!")
+        }
+        sapa("Luthfi")
+
+        // 2. Buat fungsi hitungLuasSegitiga(alas, tinggi) yang mengembalikan hasilnya.
+        function hitungLuasSegitiga(a, t){
+            return a * t / 2
+        }
+        console.log(hitungLuasSegitiga(16, 8))
+
+        // 3. Buat fungsi cekUmur(umur) → tampilkan "Dewasa" jika ≥ 18, "Anak-anak" jika < 18.
+        function cekUmur(umur){
+            if (umur < 18) {
+                console.log("Umur " + umur + " termasuk anak-anak")
+            } else {
+                console.log("Umur " + umur + " termasuk dewasa")
+            }
+        }
+        cekUmur(16);
+
+        // 4. Buat fungsi ekspresi untuk menghitung diskon belanja.
+        let total = function(harga, diskon){
+            return harga - (harga * diskon);
+        }
+        console.log(total(200000, 15 / 100))
+
+        // 5. Buat arrow function untuk menghitung konversi suhu Celcius ke Fahrenheit.
+        let konversi = (c) => (c * 9/5) + 32
+        console.log(konversi(38))
+
+    </script>
+</body>
+</html>
