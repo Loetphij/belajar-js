@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+<body>
+    <script>
+        // 1. Coba tampilkan variabel var sebelum didefinisikan.
+        console.log(nama); 
+        var nama = "Abdul";
+       
+        // 2. Coba tampilkan variabel let sebelum didefinisikan.
+        console.log(asma);
+        let asma = "Lathif"
+
+        // 3. Coba tampilkan variabel const sebelum didefinisikan.
+        console.log(alism)
+        const alism = "Ali"
+
+
+        // 4. Buat fungsi normal di bawah, lalu panggil di atas.
+        umur(2000, 2025);
+
+        function umur(tl, ts) {
+            console.log(ts - tl);
+        }
+
+        // 5. Buat fungsi versi panah (const halo = () => {}), panggil di atas. Apa bedanya?
+        halo();
+
+        const halo = () => {
+            console.log("Halo dunia!");
+        };
+
+    </script>
+</body>
+</html>

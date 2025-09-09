@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabel, Tipe data, Operator</title>
+</head>
+<body>
+    <script>
+        // 1. Buat variabel nama, umur, statusPelajar. Tampilkan semuanya dengan console.log().
+        const nama = "Luthfi"
+        const umur = "15"
+        const statusPelajar = "SMA"
+        console.log("Saya bernama " + nama + ", saya berusia " + umur + " tahun, dan saya seorang pelajar " + statusPelajar)
+
+        // 2. Buat variabel uangSaku = 50000, jajan = 15000, hitung sisa uangnya.
+        let uangSaku = 50000
+        let jajan = 15000
+        let sisa = uangSaku - jajan
+        console.log("Uang saku " + uangSaku + " diapakai untuk jajan sebesar " + jajan + ", sisanya " + sisa)
+
+        // 3. Buat variabel sudahLogin = true. Cek apakah user sudah login, jika iya tampilkan "Selamat datang".
+        let sudahLogin = true;
+        if (sudahLogin) {
+            console.log("Selamat datang");
+        }
+
+        // 4. Buat variabel nilai = 75. Jika nilai ≥ 70 tampilkan "Lulus", jika tidak "Tidak Lulus".
+        let nilai = Number(prompt("Masukkan nilai"))
+        if(nilai >= 70){
+            console.log("Kamu lulus dengan nilai " + nilai)
+        } else {
+            console.log("Kamu tidak lulus dengan nilai " + nilai)
+        }
+
+        // 5. Coba deklarasikan const angka = 10, lalu ubah nilainya. Apa hasilnya?
+        const angka = 10
+        console.log(nilai(15))
+        
+    </script>
+</body>
+</html>

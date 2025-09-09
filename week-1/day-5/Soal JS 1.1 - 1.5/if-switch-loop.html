@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Kontrol (If, Switch, Loop)</title>
+</head>
+<body>
+    <script>
+        // 1. Buat program cek ganjil/genap dari angka tertentu.
+        const angka = 7866432456789123
+        console.log(angka % 2)
+
+        if(angka % 2 === 0){
+            console.log("angka genap")
+        }else{
+            console.log("angka ganjil")
+        }
+
+        // 2. Buat program yang menampilkan nama bulan sesuai angka (1–12) menggunakan switch.
+        const bulan = 56
+            switch (bulan) {
+                case 1:
+                    console.log("Januari");
+                    break;
+                case 2:
+                    console.log("Februari");
+                    break;
+                case 3:
+                    console.log("Maret");
+                    break;
+                case 4:
+                    console.log("April");
+                    break;
+                case 5:
+                    console.log("Mei");
+                    break;
+                case 6:
+                    console.log("Juni");
+                    break;
+                case 7:
+                    console.log("Juli");
+                    break;
+                case 8:
+                    console.log("Agustus");
+                    break;
+                case 9:
+                    console.log("September");
+                    break;
+                case 10:
+                    console.log("Oktober");
+                    break;
+                case 11:
+                    console.log("November");
+                    break;
+                case 12:
+                    console.log("Desember");
+                    break;
+                default:
+                    console.log("Mana ada bulan ke-" + bulan + "?")
+                    break;
+            }
+
+        // 3. Buat program untuk mencetak angka 1 sampai 20 dengan for.
+        for(let i = 1; i <= 20; i++){
+            console.log("angka ke-"+i);
+        }
+
+        // 4. Buat program untuk mencetak bilangan kelipatan 5 dari 1–50.
+        const kelipatan = 5
+        for(let i = 1; i <= 10; i++){
+            console.log(kelipatan + " * " + i + " = " + (kelipatan*i))
+        }
+
+        // 5. Buat program yang terus meminta input password hingga benar (while).
+        let passwordBenar = "12345";
+        let input = "";
+
+        while (input !== passwordBenar) {
+            input = prompt("Masukkan password:");
+        }
+
+        alert("Password benar, Selamat datang!");
+         
+    </script>
+</body>
+</html>

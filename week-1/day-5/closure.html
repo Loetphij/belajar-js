@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+        // 1. Buat fungsi buatCounter() yang setiap dipanggil nambah 1.
+
+        // function buatCounter() {
+        //     let angka = 0;
+
+        //     function counter() {
+        //         angka += 1; 
+        //         console.log("Counter: " + angka);
+        //     }
+        //     return counter
+
+        // }
+        // let count = buatCounter();
+
+        // while ("Angka berhasil ditambahkan") {
+        //     let input = confirm("Tambahkan angka")
+
+        //     if (input === null) {
+        //     console.log("Program selesai.");
+        //     break; 
+        // }
+
+        // count(confirm(input));
+        // }
+
+        // 2. Buat fungsi buatTabungan() yang bisa menyimpan uang.
+
+        // function buatTabungan() {
+        //     let saldo = 0;
+
+        //     function isiTabungan(jumlah) {
+        //         saldo += jumlah; 
+        //         console.log("Saldo sekarang: " + saldo);
+        //     }
+
+        //     return isiTabungan;
+        // }
+
+        // let tabungan = buatTabungan();
+
+        // while (true) {
+        //     let input = prompt("Masukkan Angka (atau tekan Cancel untuk keluar)");
+
+        //     if (input === null) {
+        //     console.log("Program selesai.");
+        //     break; 
+        // }
+
+        // tabungan(Number(input));
+        // }
+
+        // 3. Buat fungsi buatKeranjangBelanja() yang bisa menambahkan barang baru.
+
+        // function buatKeranjangBelanja() {
+        //     let keranjang = [];
+
+        //     function isiKeranjang(tambah) {
+        //         keranjang.push(tambah); 
+        //         console.log(`Isi keranjang sekarang: ${keranjang.join(", ")}`);
+        //     }
+
+        //     return isiKeranjang;
+        // }
+
+        // let keranjangBelanja = buatKeranjangBelanja();
+
+        // while (true) {
+        //     let input = prompt("Masukkan Barang (atau tekan Cancel untuk keluar)");
+
+        //     if (input === null) {
+        //         console.log("Program selesai.");
+        //         break; 
+        //     }   
+
+        //     keranjangBelanja(input);
+        // }
+
+        // 4. Buat fungsi buatTimer() yang menyimpan detik setiap kali dipanggil.
+
+        function buatTimer() {
+            let detik = 0;
+            function hitung() {
+                detik++;
+                console.log('Detik sekarang: ' + detik)
+            }
+            return hitung;
+        }
+
+        let timer = buatTimer();
+        setInterval(timer, 1000);
+        
+
+        // 5. Buat fungsi buatCatatanNama() yang bisa menambahkan nama siswa ke daftar.
+        
+        // function buatCatatanNama() {
+        //     let catatan = [];
+
+        //     function isiCatatan(tambah) {
+        //         catatan.push(tambah); 
+        //         console.log(`Isi catatan nama: ${catatan.join(", ")}`);
+        //     }
+
+        //     return isiCatatan;
+        // }
+
+        // let catatanNama = buatCatatanNama();
+
+        // while (true) {
+        //     let input = prompt("Masukkan Nama (atau tekan Cancel untuk keluar)");
+
+        //     if (input === null) {
+        //         console.log("Program selesai.");
+        //         break; 
+        //     }   
+
+        //     catatanNama(input);
+        // }
+
+    </script>
+</body>
+</html>
