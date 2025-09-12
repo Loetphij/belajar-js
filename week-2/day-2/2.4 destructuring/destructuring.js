@@ -93,6 +93,8 @@ let gabungObject = {...object1,...object2}
 console.log(gabungObject)
 
 // Spread array [5, 6, 7] ke console.log.
+
+
 // Gabungkan array ["a", "b"] dan ["c", "d"].
 let firstArray = ["a", "b"]
 let secondArray = ["c", "d"]
@@ -130,7 +132,7 @@ console.log(kalikan(15, 27, 31, 42))
 
 // Buat function gabungKalimat yang nerima banyak kata jadi 1 kalimat.
 function gabungKalimat(...kata) {
-  return kata.reduce((kalimat, kataBaru) => kalimat + " " + kataBaru);
+  return kata.reduce((kalimat, kataBaru) => `${kalimat} ${kataBaru}`);
 }
 
 console.log(gabungKalimat("Halo", "kamu", "lagi", "ngapain"));
@@ -180,7 +182,7 @@ let hobi = {hobi: "Melukis, Musik"}
 function tambah(...nilaiUjian){
     return nilaiUjian.reduce((total, n) => total + n, 0)
 }
-let jumlahNilaiUjian = (tambah(89, 85, 75, 92, 50, 74, 95))
+let jumlahNilaiUjian = {nilai: (tambah(89, 85, 75, 92, 50, 74, 95))}
 let dataSiswaNew = [dataSiswa, hobi, jumlahNilaiUjian]
 // Tampilkan hasil akhir ke console.
 console.log(dataSiswaNew)

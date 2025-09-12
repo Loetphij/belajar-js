@@ -1,0 +1,1 @@
+export default function sapa() { return "Halo, nama!"; }
