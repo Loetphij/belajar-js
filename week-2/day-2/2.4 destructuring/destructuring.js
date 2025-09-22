@@ -119,7 +119,7 @@ console.log(jumlah(10, 20, 30, 40, 50))
 
 // Buat function cetak yang nerima banyak string dan print satu-satu.
 function cetak(...teks) {
-  teks.forEach(item => {console.log(item);});
+  teks.forEach(item => {console.log(item)});
 }
 
 cetak("Halo", "kamu", "lagi","ngapain");

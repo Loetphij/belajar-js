@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan DOM</title>
+</head>
+<body>
+  <h1>Latihan Mandiri DOM</h1>
+  
+  <!-- 1. Ubah isi  -->
+  <p id="paragraf1">Ini isi paragraf awal.</p>
+  <button onclick="ubahIsi()">Ubah Isi Paragraf</button>
+  
+  <hr>
+  
+  <!-- 2. Ubah background -->
+  <div id="box" style="width:200px; height:100px; background:lightgray;">
+    Ubah warna kotak
+  </div>
+  <button onclick="ubahWarna()">Ubah Warna Latar</button>
+  
+  <hr>
+  
+  <!-- 3. Input teks dan tombol -->
+  <input type="text" id="inputText" placeholder="Input teks">
+  <button onclick="tampilkanInput()">Tampilkan</button>
+  <p id="output"></p>
+
+  <script>
+    function ubahIsi() {
+      document.getElementById("paragraf1").innerText = "Isi paragraf sudah diubah!";
+    }
+
+    function ubahWarna() {
+      document.querySelector("#box").style.backgroundColor = "lightblue";
+    }
+
+    function tampilkanInput() {
+      let teks = document.getElementById("inputText").value;
+      document.getElementById("output").innerText = teks;
+    }
+  </script>
+</body>
+</html>
